@@ -73,7 +73,13 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  
+  if (str1.length==str2.length){
+    return (true)
+  }
+  else
+  {
+return (false)
+  }
 }
 
 function menosQueNoventa(num) {
@@ -92,8 +98,7 @@ function mayorQueCincuenta(num) {
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
-  // Tu código:
-  
+  // Tu código:S
 }
 
 function esPar(num) {
