@@ -201,8 +201,7 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-   
-  return ("str"+"!");
+  return str + "!";
    
   
 
@@ -212,9 +211,9 @@ function agregarSimboloExclamacion(str) {
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
-  // Tu código: 
-  
-  return ("nombre"+" apellido")
+  // Tu código:
+  return nombre+" " +apellido;
+
 
 
 }
@@ -224,7 +223,7 @@ function obtenerSaludo(nombre) {
   // "Martin" -> "Hola Martin!"
   // Tu código:
    
-  
+   return agregarSimboloExclamacion('Hola '+ nombre);
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -238,22 +237,25 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
-  
+
+  return (lado+lado+lado+lado);
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
-}
+  return (base*altura/2)
+} 
 
 
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
+   
+  cambio = euro * 1.20
+  return cambio
   
 }
 
@@ -264,6 +266,21 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
+
+  if(letra == "a"|| letra =="e"|| letra == "i"|| letra == "o"|| letra == "u"){
+    return "Es vocal"
+  }
+  else
+  {
+    return "Dato incorrecto"
+  }
+  
+ 
+  
+    
+  
+  
+
   
 }
 
